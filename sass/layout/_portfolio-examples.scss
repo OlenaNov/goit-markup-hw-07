@@ -2,23 +2,29 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
+    & .item {
+        width: 370px;
+    }
 }
 
-.list-portf-examples .item {
-    width: 370px;
 
-}
 
 .portf-link {
     display: block;
     transition: box-shadow var(--trans-dur-and-func);
-}
 
-.portf-link:hover,
-.portf-link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-     0px 4px 4px rgba(0, 0, 0, 0.06),
-     1px 4px 6px rgba(0, 0, 0, 0.16);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+         0px 4px 4px rgba(0, 0, 0, 0.06),
+         1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    &:hover  .text-overlay, 
+    &:focus  .text-overlay{
+        transform: translateY(0);
+    }
 }
 
 .card-text {
@@ -48,11 +54,6 @@
 .box-overlay-portf {
     position: relative;
     overflow: hidden;
-}
-
-.portf-link:hover  .text-overlay, 
-.portf-link:focus  .text-overlay{
-    transform: translateY(0);
 }
 
 .text-overlay {

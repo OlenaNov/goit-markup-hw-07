@@ -1,11 +1,12 @@
 .list-our-work {
     display: flex;
     justify-content: space-between;
+
+    & > .item {
+        position: relative;
+    }
 }
 
-.list-our-work > .item {
-    position: relative;
-}
 
 .box-our-work-subtitle {
     position: absolute;

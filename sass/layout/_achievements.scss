@@ -1,14 +1,17 @@
-.list-our-adv .item {
-    width: 270px;
-}
+
 
 .list-our-adv {
     display: flex;
+
+    & .item {
+        width: 270px;
+    }
+
+    & .item:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.list-our-adv .item:not(:last-child) {
-    margin-right: 30px;
-}
 
 .our-adv-cont-icon {
     width: 270px;

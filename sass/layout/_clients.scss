@@ -15,18 +15,20 @@
     border-radius: 4px;
 
     transition: border-color var(--trans-dur-and-func);
+
+    
+    &:hover,
+    &:focus {
+        border-color: var(--color-accent);
+}
+
+    &:hover .icon-our-clients,
+    &:focus .icon-our-clients{
+        fill: var(--color-accent);
+}
 }
 
 
-.link-our-clients:hover,
-.link-our-clients:focus {
-    border-color: var(--color-accent);
-}
-
-.link-our-clients:hover .icon-our-clients,
-.link-our-clients:focus .icon-our-clients{
-    fill: var(--color-accent);
-}
 
 .icon-our-clients {
     fill: var(--color-social-icon);

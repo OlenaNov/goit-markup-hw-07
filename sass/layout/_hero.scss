@@ -41,10 +41,12 @@
 
 
     transition: background-color var(--trans-dur-and-func);
+
+        &:hover,
+        &:focus {
+        background: var(--color-active-btn);
+        border: none;
+}
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-    background: var(--color-active-btn);
-    border: none;
-}
+

@@ -27,10 +27,11 @@
     background-color: var(--color-light);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+
+    &:hover,
+    &:focus {
+        fill: var(--color-accent);
+        cursor: pointer;
+    }
 }
 
-.btn-close-modal:hover,
-.btn-close-modal:focus {
-    fill: var(--color-accent);
-    cursor: pointer;
-}

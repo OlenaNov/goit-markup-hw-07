@@ -2,13 +2,15 @@
     background-color: var(--color-back-secondary);
     padding-top: 60px;
     padding-bottom: 60px;
+
+    & > .container {
+        display: flex;
+        align-items: baseline;
+    
+    }
 }
 
-.footer > .container {
-    display: flex;
-    align-items: baseline;
 
-}
 
 .container-contacts-footer {
     margin-right: 70px;
@@ -66,12 +68,14 @@
 
     background-color: var(--color-back-social-icon);
     transition: background-color var(--trans-dur-and-func);
+
+        &:hover,
+        &:focus {
+            background-color: var(--color-accent);
+}
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
-    background-color: var(--color-accent);
-}
+
 
 .footer-icon {
     fill: var(--color-light);
@@ -110,14 +114,14 @@
 
     color: var(--color-light);
     background-color: transparent;
-}
 
-.footer-input-form::placeholder {
-    font-weight: 400;
-    line-height: 20px;
-    font-size: 1.25;
-
-    color: var(--color-footer-link);
+    &::placeholder {
+        font-weight: 400;
+        line-height: 20px;
+        font-size: 1.25;
+    
+        color: var(--color-footer-link);
+    }
 }
 
 .footer-btn-submit {
@@ -140,12 +144,14 @@
     color: var(--color-light);
 
     transition: background-color var(--trans-dur-and-func);
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-active-btn);
+}
 }
 
-.footer-btn-submit:hover,
-.footer-btn-submit:focus {
-    background-color: var(--color-active-btn);
-}
+
 
 .footer-form-icon {
     fill: var(--color-light);

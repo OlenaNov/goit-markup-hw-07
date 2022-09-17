@@ -13,10 +13,11 @@
     pointer-events: auto;
     transition: opacity var(--trans-dur-and-func), 
     visibility var(--trans-dur-and-func);
+    
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
 }
 
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}

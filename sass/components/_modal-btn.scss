@@ -18,9 +18,10 @@
 
     color: var(--color-light);
     transition: fill var(--trans-dur-and-func);
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-active-btn);
+    }
 }
 
-.btn-submit-modal:hover,
-.btn-submit-modal:focus {
-    background-color: var(--color-active-btn);
-}

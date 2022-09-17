@@ -13,14 +13,14 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-}
 
-.label:not(:last-child) {
-    margin-bottom: 10px;
-}
-
-.label:nth-child(5) {
-    margin-bottom: 20px;
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    
+    &:nth-child(5) {
+        margin-bottom: 20px;
+    }
 }
 
 .text-form {
@@ -52,15 +52,15 @@
     cursor: pointer;
     
     transition: border-color var(--trans-dur-and-func);
-}
 
-.input-form:focus {
-    border-color: var(--color-accent);
-    outline: none;
-}
-
-.input-form:focus + .form-icon {
-    fill: var(--color-accent)
+    &:focus {
+        border-color: var(--color-accent);
+        outline: none;
+    }
+    
+    &:focus + .form-icon {
+        fill: var(--color-accent)
+    }
 }
 
 .form-icon {
@@ -81,11 +81,11 @@
     border-radius: 4px;
     cursor: pointer;
     transition: border-color var(--trans-dur-and-func);
-}
 
-.input-coment:focus {
-    border-color: var(--color-accent);
-    outline: none;
+    &:focus {
+        border-color: var(--color-accent);
+        outline: none;
+    }
 }
 
 .input-coment::placeholder {
@@ -113,6 +113,18 @@
 .check-agree {
     position: absolute;
     appearance: none;
+
+    &:checked + .form-check-icon {
+        border: none;
+    }
+    
+    &:checked + .form-check-icon > .form-chek-use {
+        display: block;
+    }
+    
+    &:focus + .form-check-icon {
+        box-shadow: 0 0 0 2px var(--color-accent);
+    }
 }
 
 .form-check-icon {
@@ -124,18 +136,6 @@
 
 .form-chek-use {
     display: none;
-}
-
-.check-agree:checked + .form-check-icon {
-    border: none;
-}
-
-.check-agree:checked + .form-check-icon > .form-chek-use {
-    display: block;
-}
-
-.check-agree:focus + .form-check-icon {
-    box-shadow: 0 0 0 2px var(--color-accent);
 }
 
 .agree-link {
