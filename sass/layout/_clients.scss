@@ -20,12 +20,7 @@
     &:hover,
     &:focus {
         border-color: var(--color-accent);
-}
-
-    &:hover .icon-our-clients,
-    &:focus .icon-our-clients{
-        fill: var(--color-accent);
-}
+    }
 }
 
 
@@ -33,4 +28,9 @@
 .icon-our-clients {
     fill: var(--color-social-icon);
     transition: fill var(--trans-dur-and-func);
+
+    .link-our-clients:hover &,
+    .link-our-clients:focus & {
+        fill: var(--color-accent);
+    }
 }

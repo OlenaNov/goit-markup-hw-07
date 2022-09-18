@@ -64,15 +64,15 @@
     &:focus {
         background-color: var(--color-accent);
     }
-
-    &:hover .social-icon,
-    &:focus .social-icon {
-        fill: var(--color-light);
-    }
 }
 
 .social-icon {
     fill: var(--color-social-icon);
     transition: fill var(--trans-dur-and-func);
+
+    .social-link:hover &,
+    .social-link:focus & {
+        fill: var(--color-light);
+    }
 }
 
