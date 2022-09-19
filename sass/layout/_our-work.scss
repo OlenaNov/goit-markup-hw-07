@@ -10,9 +10,7 @@
 
 .box-our-work-subtitle {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     bottom: 0;
     left: 0;
 

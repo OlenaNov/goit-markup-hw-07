@@ -99,12 +99,9 @@
 
 
 .label-agree {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     margin-bottom: 30px;
-
-
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
