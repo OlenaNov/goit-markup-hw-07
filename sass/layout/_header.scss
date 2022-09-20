@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.header-nav {
+.header-navigation {
     display: flex;
     align-items: center;
 
@@ -15,7 +15,7 @@
     }
 }
 
-.header-link {
+.header-navigation__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -47,7 +47,7 @@
     }
 }
 
-.list-nav {
+.header-navigation__list {
     display: flex;
     margin-left: 93px;
 
@@ -66,7 +66,7 @@
     }
 }
 
-.list-cont {
+.contacts-list {
     display: flex;
     margin-left: auto;
 
@@ -81,7 +81,7 @@
     color: var(--color-text);
 }
 
-.header-icon {
+.header-navigation__icon {
     margin-right: 10px;
 
     fill: currentColor;
